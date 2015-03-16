@@ -1,0 +1,12 @@
+<% content_for(:title, "List | To Do") %>
+
+<h1><%= @list.name %></h1>
+
+<h4><%= @list.description%></h4>
+
+<p><%= link_to "Edit", edit_list_path(@list) %></p>
+<p><%= link_to "Delete",list_path(@list),
+                          :data => {:confirm => "Are you sure?",
+                                    :method => "delete"} %></p>
+
+<p><%= link_to 'Return to lists', lists_path%></p>
