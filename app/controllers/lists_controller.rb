@@ -42,7 +42,6 @@ class ListsController < ApplicationController
     @list.destroy
     redirect_to lists_path
   end
-end
 
 private
   def list_params
